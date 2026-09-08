@@ -1,6 +1,6 @@
 /* ============================================
-   HEAVEN ESTATE & BUILDER - Premium Website
-   Modern Luxury Real Estate Theme
+   DIVINE PROPERTIES - Premium Website
+   Authorized DHA Partner Islamabad
    ============================================ */
 
 :root {
@@ -212,15 +212,16 @@ ul { list-style: none; }
     gap: 0;
 }
 
-.logo-img {
-    height: 70px;
-    width: auto;
-    object-fit: contain;
-    transition: var(--transition);
+.logo-name {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.2;
 }
 
-.logo:hover .logo-img {
-    transform: scale(1.08);
+.logo:hover .logo-name {
+    color: var(--gold);
 }
 
 .footer-logo-img {
@@ -2396,7 +2397,7 @@ ul { list-style: none; }
     .container { padding: 0 16px; }
 
     .header-container { padding: 0 16px; }
-    .logo-img { height: 55px; }
+    .logo-name { font-size: 1.1rem; }
 
     .hero-content { padding: 0 16px; padding-top: 120px; padding-bottom: 16px; }
     .hero-badge { padding: 8px 16px; margin-bottom: 14px; }
@@ -2625,6 +2626,8 @@ ul { list-style: none; }
     .osm-icon { font-size: 1.5rem; }
 
     .footer-logo-img { height: 60px; }
+
+    .footer-logo .logo-name { font-size: 1.2rem; color: var(--white); }
 
     .mobile-nav-list a { font-size: 1.3rem; }
     .mobile-nav-list li { margin: 6px 0; }
