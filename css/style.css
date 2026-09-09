@@ -224,6 +224,17 @@ ul { list-style: none; }
     color: var(--gold);
 }
 
+.logo-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.08);
+}
+
 .footer-logo-img {
     height: 80px;
     width: auto;
@@ -2626,7 +2637,6 @@ ul { list-style: none; }
     .osm-icon { font-size: 1.5rem; }
 
     .footer-logo-img { height: 60px; }
-
     .footer-logo .logo-name { font-size: 1.2rem; color: var(--white); }
 
     .mobile-nav-list a { font-size: 1.3rem; }
