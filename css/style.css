@@ -151,10 +151,12 @@ span { color: var(--gold); }
 .services-list { display: flex; flex-direction: column; gap: 16px; }
 .service-item { display: flex; align-items: center; gap: 20px; padding: 24px; background: var(--white); border: 1px solid var(--border); border-radius: 10px; transition: 0.2s; }
 .service-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
-.service-icon { width: 48px; height: 48px; background: var(--cream); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.1rem; flex-shrink: 0; }
+.service-icon { width: 56px; height: 56px; background: var(--cream); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.2rem; flex-shrink: 0; }
 .service-text { flex: 1; }
-.service-text h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
-.service-text p { font-size: 0.85rem; color: var(--gray); line-height: 1.6; }
+.service-text h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; color: var(--dark); }
+.service-text p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
+.btn-small { padding: 10px 20px; background: var(--gold); color: var(--white); border-radius: 6px; font-size: 0.85rem; font-weight: 600; transition: 0.2s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.btn-small:hover { background: var(--gold-light); }
 
 /* Services Grid */
 .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
@@ -259,8 +261,11 @@ span { color: var(--gold); }
     .section-title h2 { font-size: 1.5rem; }
     
     /* Services Mobile */
-    .service-item { padding: 16px; gap: 14px; }
-    .service-icon { width: 40px; height: 40px; font-size: 1rem; }
+    .service-item { padding: 16px; gap: 14px; flex-direction: column; align-items: stretch; text-align: center; }
+    .service-icon { width: 48px; height: 48px; font-size: 1rem; margin: 0 auto; }
+    .service-text h3 { font-size: 1rem; }
+    .service-text p { font-size: 0.85rem; }
+    .btn-small { width: 100%; justify-content: center; padding: 12px; }
     .service-card { padding: 20px 16px; }
     .service-card .service-icon { width: 48px; height: 48px; font-size: 1.1rem; }
     
