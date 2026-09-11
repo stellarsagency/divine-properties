@@ -211,6 +211,19 @@ a { text-decoration: none; color: inherit; }
     transition: 0.2s;
 }
 .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: #25D366;
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.btn-whatsapp:hover { background: #20BD5A; }
 .btn-full { width: 100%; justify-content: center; }
 .hero-stats {
     display: flex;
@@ -256,6 +269,125 @@ a { text-decoration: none; color: inherit; }
     color: var(--gray);
     max-width: 500px;
     margin: 0 auto;
+}
+
+/* Properties */
+.properties { background: var(--cream); }
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.property-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+.property-card:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+}
+.property-img {
+    position: relative;
+    height: 220px;
+}
+.property-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.property-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 6px 14px;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.property-badge.for-rent { background: #25D366; }
+.property-type {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 6px 14px;
+    background: rgba(0,0,0,0.7);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 4px;
+}
+.property-content {
+    padding: 24px;
+}
+.property-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.property-location {
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-bottom: 16px;
+}
+.property-location i { color: var(--gold); margin-right: 6px; }
+.property-features {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.property-features span {
+    font-size: 0.85rem;
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.property-features i { color: var(--gold); font-size: 0.8rem; }
+.property-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+.property-price strong {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gold);
+    font-family: var(--font-heading);
+}
+.btn-inquire {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    background: var(--gold);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.btn-inquire:hover { background: var(--gold-light); gap: 10px; }
+.properties-cta {
+    text-align: center;
+    margin-top: 40px;
 }
 
 /* About */
@@ -722,6 +854,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 1024px) {
     .services-grid { grid-template-columns: 1fr; }
     .why-grid, .contact-grid { grid-template-columns: 1fr; }
+    .properties-grid { grid-template-columns: 1fr; }
     .footer-top { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -739,8 +872,6 @@ a { text-decoration: none; color: inherit; }
     .hero-stats .stat strong { font-size: 1.4rem; }
     .about-img-secondary { display: none; }
     .experience-badge { left: 20px; }
-    .service-card { grid-template-columns: 1fr; }
-    .service-img { height: 180px; }
     .cta-btns { flex-direction: column; }
     .contact-form { padding: 24px; }
     .form-row { grid-template-columns: 1fr; }
@@ -752,5 +883,7 @@ a { text-decoration: none; color: inherit; }
     .hero-stats { flex-wrap: wrap; gap: 20px; }
     .hero-stats .stat { min-width: 80px; }
     .about-img-main img { height: 300px; }
-    .why-image img { height: 300px; }
+    .property-img { height: 180px; }
+    .property-footer { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .btn-inquire { width: 100%; justify-content: center; }
 }
