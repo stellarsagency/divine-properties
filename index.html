@@ -13,27 +13,26 @@
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <a href="#home" class="logo">
-                <span class="logo-name">Divine Properties</span>
+                <span class="logo-text">Divine<span class="logo-dot">.</span></span>
             </a>
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#why-us">Why Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <a href="tel:+923399113500" class="header-phone">
+            <div class="header-right">
+                <a href="tel:+923399113500" class="phone-btn">
                     <i class="fas fa-phone"></i>
                     <span>+92 339 9113500</span>
                 </a>
-                <button class="menu-toggle" id="menuToggle">
-                    <span></span>
+                <button class="menu-btn" id="menuBtn">
                     <span></span>
                     <span></span>
                 </button>
@@ -42,42 +41,109 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <ul class="mobile-nav-list">
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#why-us">Why Us</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="mobile-menu-footer">
+        <div class="mobile-nav-bottom">
             <a href="tel:+923399113500"><i class="fas fa-phone"></i> +92 339 9113500</a>
-            <a href="https://wa.me/923399113500" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://wa.me/923399113500" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
         </div>
     </div>
 
     <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-bg">
-            <img src="images/Faisal Masjid.jpg" alt="DHA 2 Islamabad" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Luxury Property">
             <div class="hero-overlay"></div>
         </div>
         <div class="container">
             <div class="hero-content">
-                <span class="hero-badge">AUTHORIZED DHA PARTNER</span>
-                <h1>Divine Properties</h1>
-                <p class="hero-tagline">Buy. Sell. Rent. Exchange.</p>
-                <p class="hero-desc">Your trusted partner for premium properties in DHA 2, Islamabad. Plots, Homes, Shops & Apartments with transparent dealings.</p>
-                <div class="hero-cta">
-                    <a href="tel:+923399113500" class="btn btn-primary">
-                        <i class="fas fa-phone"></i> Call Now
+                <div class="hero-badge">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Authorized DHA Partner</span>
+                </div>
+                <h1>Find Your Perfect<br>Property in <span class="gold">DHA 2</span></h1>
+                <p>We help you buy, sell, rent, and exchange premium properties in DHA 2, Islamabad. Trusted by 500+ families.</p>
+                <div class="hero-btns">
+                    <a href="https://wa.me/923399113500" target="_blank" class="btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat on WhatsApp
                     </a>
-                    <a href="https://wa.me/923399113500" target="_blank" class="btn btn-outline">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    <a href="tel:+923399113500" class="btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        Call Us
                     </a>
                 </div>
-                <div class="hero-badges">
-                    <span><i class="fas fa-map-marker-alt"></i> DHA 2, Islamabad</span>
-                    <span><i class="fas fa-shield-halved"></i> Verified Properties</span>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>500+</strong>
+                        <span>Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <strong>10+</strong>
+                        <span>Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <strong>1000+</strong>
+                        <span>Properties Sold</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Modern House">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80" alt="Interior">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-num">10+</span>
+                        <span class="exp-text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label">About Us</span>
+                    <h2>Your Trusted <span class="gold">DHA Partner</span></h2>
+                    <p class="about-lead">Divine Properties is an authorized DHA partner specializing in real estate services across DHA 2, Islamabad.</p>
+                    <p>We provide comprehensive solutions for buying, selling, renting, and exchanging properties. With deep knowledge of the DHA market and a commitment to transparent dealings, we help our clients make informed investment decisions.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-halved"></i>
+                            <div>
+                                <strong>Verified Properties</strong>
+                                <span>100% documentation</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <strong>Transparent Dealings</strong>
+                                <span>No hidden charges</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-location-dot"></i>
+                            <div>
+                                <strong>DHA 2 Specialist</strong>
+                                <span>Prime locations only</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="tel:+923399113500" class="btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Get in Touch
+                    </a>
                 </div>
             </div>
         </div>
@@ -87,71 +153,112 @@
     <section id="services" class="section services">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">WHAT WE DO</span>
-                <h2>Our <span class="text-gold">Services</span></h2>
+                <span class="section-label">What We Offer</span>
+                <h2>Our <span class="gold">Services</span></h2>
+                <p>Complete real estate solutions for DHA 2, Islamabad</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
-                    <h3>Buy Property</h3>
-                    <p>Find your dream plot, home, shop, or apartment in DHA 2 with verified documentation.</p>
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&q=80" alt="Buy Property" class="service-img">
+                    <div class="service-content">
+                        <h3>Buy Property</h3>
+                        <p>Find your dream plot, home, or apartment in DHA 2 with verified documentation and clear titles.</p>
+                        <a href="https://wa.me/923399113500" target="_blank">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-tag"></i></div>
-                    <h3>Sell Property</h3>
-                    <p>List your property with us and get the best market price from genuine buyers.</p>
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=80" alt="Sell Property" class="service-img">
+                    <div class="service-content">
+                        <h3>Sell Property</h3>
+                        <p>List your property with us and get the best market price from genuine buyers in DHA 2.</p>
+                        <a href="https://wa.me/923399113500" target="_blank">List Your Property <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-key"></i></div>
-                    <h3>Rent Property</h3>
-                    <p>Explore rental options for homes, shops, and apartments in DHA 2.</p>
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=400&q=80" alt="Rent Property" class="service-img">
+                    <div class="service-content">
+                        <h3>Rent Property</h3>
+                        <p>Explore rental options for homes, shops, and apartments in premium DHA 2 locations.</p>
+                        <a href="https://wa.me/923399113500" target="_blank">View Rentals <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-right-left"></i></div>
-                    <h3>Exchange Property</h3>
-                    <p>Smooth property exchanges within DHA 2 and surrounding areas.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-map"></i></div>
-                    <h3>Plots & Land</h3>
-                    <p>Residential and commercial plots in prime DHA 2 locations.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Investment Advisory</h3>
-                    <p>Expert guidance for maximum returns on DHA 2 property investments.</p>
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&q=80" alt="Exchange Property" class="service-img">
+                    <div class="service-content">
+                        <h3>Exchange Property</h3>
+                        <p>Looking to swap your property? We facilitate smooth exchanges within DHA 2.</p>
+                        <a href="https://wa.me/923399113500" target="_blank">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Us -->
-    <section id="why-us" class="section why-us">
+    <section id="why-us" class="section why-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">WHY CHOOSE US</span>
-                <h2>Why <span class="text-gold">Divine Properties?</span></h2>
-            </div>
             <div class="why-grid">
-                <div class="why-card">
-                    <i class="fas fa-shield-halved"></i>
-                    <h4>Authorized DHA Partner</h4>
-                    <p>Official partner ensuring authentic properties in DHA 2.</p>
+                <div class="why-content">
+                    <span class="section-label">Why Choose Us</span>
+                    <h2>We Deliver <span class="gold">Trust & Value</span></h2>
+                    <p>At Divine Properties, we don't just sell properties — we build lasting relationships through transparency and excellence.</p>
+                    <div class="why-list">
+                        <div class="why-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Authorized DHA Partner — 100% Authentic</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Transparent Dealings — No Hidden Charges</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Prime DHA 2 Locations Only</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Buy, Sell, Rent & Exchange Services</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Verified Documentation</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Dedicated Customer Support</span>
+                        </div>
+                    </div>
+                    <a href="tel:+923399113500" class="btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Contact Us Today
+                    </a>
                 </div>
-                <div class="why-card">
-                    <i class="fas fa-handshake"></i>
-                    <h4>Transparent Dealings</h4>
-                    <p>Honesty and transparency in every transaction.</p>
+                <div class="why-image">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80" alt="Premium Property">
                 </div>
-                <div class="why-card">
-                    <i class="fas fa-map-location-dot"></i>
-                    <h4>Prime Locations</h4>
-                    <p>Premium properties in DHA 2's best sectors.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-headset"></i>
-                    <h4>Dedicated Support</h4>
-                    <p>Customer satisfaction is our top priority.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-bg">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=80" alt="Luxury Living">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your<br>Dream Property?</h2>
+                <p>Let us help you find the perfect property in DHA 2, Islamabad. Your dream home is just a call away.</p>
+                <div class="cta-btns">
+                    <a href="https://wa.me/923399113500" target="_blank" class="btn-white">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp Us
+                    </a>
+                    <a href="tel:+923399113500" class="btn-outline-white">
+                        <i class="fas fa-phone"></i>
+                        +92 339 9113500
+                    </a>
                 </div>
             </div>
         </div>
@@ -160,62 +267,84 @@
     <!-- Contact -->
     <section id="contact" class="section contact">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">GET IN TOUCH</span>
-                <h2>Contact <span class="text-gold">Us</span></h2>
-            </div>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                        <div>
-                            <h4>Phone</h4>
-                            <a href="tel:+923399113500">+92 339 9113500</a>
+                    <span class="section-label">Contact Us</span>
+                    <h2>Get in <span class="gold">Touch</span></h2>
+                    <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+923399113500">+92 339 9113500</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <a href="https://wa.me/923399113500" target="_blank">+92 339 9113500</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:divineproperties@gmail.com">divineproperties@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <strong>Office</strong>
+                                <span>Plaza #10, Street 19, Sector J,<br>DHA 2, Islamabad 45730</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <strong>Working Hours</strong>
+                                <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-                        <div>
-                            <h4>WhatsApp</h4>
-                            <a href="https://wa.me/923399113500" target="_blank">+92 339 9113500</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:divineproperties@gmail.com">divineproperties@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
-                        <div>
-                            <h4>Office</h4>
-                            <p>Plaza #10, Street 19, Sector J,<br>DHA 2, Islamabad 45730</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                        <div>
-                            <h4>Working Hours</h4>
-                            <p>Monday - Saturday<br>9:00 AM - 6:00 PM</p>
-                        </div>
-                    </div>
-                    <div class="contact-social">
+
+                    <div class="social-links">
                         <a href="https://www.instagram.com/divineproperties/" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://wa.me/923399113500" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
-                    <h3>Send Us a <span class="text-gold">Message</span></h3>
-                    <form class="contact-form" id="contactForm">
+
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
                         <div class="form-row">
                             <input type="text" name="name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <input type="tel" name="phone" placeholder="Phone Number">
+                        <select name="service">
+                            <option value="">Select Service</option>
+                            <option value="buy">Buy Property</option>
+                            <option value="sell">Sell Property</option>
+                            <option value="rent">Rent Property</option>
+                            <option value="exchange">Exchange Property</option>
+                        </select>
                         <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn-primary btn-full">
+                        <button type="submit" class="btn-primary btn-full">
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
@@ -228,20 +357,34 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-top">
                 <div class="footer-brand">
-                    <span class="logo-name">Divine Properties</span>
-                    <p>Authorized DHA Partner<br>Buy, Sell, Rent & Exchange</p>
+                    <a href="#home" class="footer-logo">Divine<span>.</span></a>
+                    <p>Authorized DHA Partner.<br>Buy, Sell, Rent & Exchange.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#why-us">Why Us</a>
-                    <a href="#contact">Contact</a>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Buy Property</a></li>
+                        <li><a href="#services">Sell Property</a></li>
+                        <li><a href="#services">Rent Property</a></li>
+                        <li><a href="#services">Exchange</a></li>
+                    </ul>
                 </div>
                 <div class="footer-contact">
+                    <h4>Contact</h4>
                     <a href="tel:+923399113500"><i class="fas fa-phone"></i> +92 339 9113500</a>
                     <a href="mailto:divineproperties@gmail.com"><i class="fas fa-envelope"></i> divineproperties@gmail.com</a>
+                    <a href="#"><i class="fas fa-location-dot"></i> DHA 2, Islamabad</a>
                 </div>
             </div>
             <div class="footer-bottom">
